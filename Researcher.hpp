@@ -8,7 +8,9 @@ namespace pandemic
     class Researcher:public Player
     {
         public:
-    Researcher(pandemic::Board board,pandemic::City city);
+    Researcher(pandemic::Board& board,pandemic::City city);
+    virtual void discover_cure(pandemic::Color color);
+    virtual std::string role();
 
 
     };

@@ -8,9 +8,10 @@ namespace pandemic
     class OperationsExpert:public Player
     {
         public:
-    OperationsExpert(pandemic::Board board,pandemic::City city);
-
-
+    OperationsExpert(pandemic::Board& board,pandemic::City city);
+    virtual void build();
+    virtual std::string role();
     };
+    
  
 }

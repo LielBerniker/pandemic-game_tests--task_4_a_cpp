@@ -10,8 +10,9 @@ namespace pandemic
         private:
         int card_num;
         public:
-    Scientist(pandemic::Board board,pandemic::City city,int num);
-  
+    Scientist(pandemic::Board &board,pandemic::City city,int num);
+    virtual void discover_cure(pandemic::Color color);
+    virtual std::string role();
     };
  
 }

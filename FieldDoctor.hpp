@@ -5,12 +5,12 @@
 #include "Player.hpp"
 namespace pandemic
 {
-    class FieldDoctor:public Player
+    class FieldDoctor : public Player
     {
-        public:
-    FieldDoctor(pandemic::Board board,pandemic::City city);
-
-
+    public:
+        FieldDoctor(pandemic::Board&board, pandemic::City city);
+        virtual FieldDoctor &treat(pandemic::City city);
+        virtual std::string role();
     };
- 
+
 }

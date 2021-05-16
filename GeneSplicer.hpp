@@ -8,7 +8,9 @@ namespace pandemic
     class GeneSplicer: public Player
     {
         public:
-    GeneSplicer(pandemic::Board board,pandemic::City city);
+    GeneSplicer(pandemic::Board &board,pandemic::City city);
+     virtual void discover_cure(pandemic::Color color);
+     virtual std::string role();
 
 
     };

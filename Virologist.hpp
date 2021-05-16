@@ -8,7 +8,9 @@ namespace pandemic
     class Virologist:public Player
     {
       public:
-  Virologist(pandemic::Board board,pandemic::City city);
+  Virologist(pandemic::Board &board,pandemic::City city);
+  virtual Virologist &treat(pandemic::City city);
+  virtual std::string role();
 
 
     };

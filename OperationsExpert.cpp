@@ -4,9 +4,15 @@ using namespace pandemic;
 
 namespace pandemic
 {
-   OperationsExpert::OperationsExpert(Board board,City city):Player(board,city)
+   OperationsExpert::OperationsExpert(Board &board, City city) : Player(board, city)
    {
-      player_role = "OperationsExpert";
    }
-
+   void OperationsExpert::build()
+   {
+      game_board.set_city_lab(current_city, true);
+   }
+   string OperationsExpert::role()
+   {
+      return "OperationsExpert";
+   }
 }
